@@ -127,7 +127,7 @@ def main():
                 common.emit(f" table data ({fileName}) loaded",constants.LOG_TO_SYSLOG+constants.PRINT_MESSAGE)
         elif command == 's' or command == "solve":
             puts=argument.split(" ")
-            if puts[0] == "bsf":
+            if puts[0] == "bfs":
                 common.emit(f" traversing graph ({fileName}) with BFS",constants.LOG_TO_SYSLOG+constants.PRINT_MESSAGE)
                 resultSequence=""
                 visited = [] # List for visited nodes.
