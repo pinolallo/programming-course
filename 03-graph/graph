@@ -1,0 +1,6 @@
+#!/usr/local/bin/python3
+import sys
+sys.path.append('../00-commons')
+import   graph
+
+graph.main()

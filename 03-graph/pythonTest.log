@@ -1,0 +1,525 @@
+2023-04-17 08:16:42,388 - DEBUG -  ---  start emit2023-04-17 08:16:42.388281
+2023-04-17 08:16:42,388 - DEBUG - hashTable program Started
+2023-04-17 08:16:42,388 - DEBUG - --- end emit
+2023-04-17 08:18:26,577 - DEBUG -  ---  start emit2023-04-17 08:18:26.577713
+2023-04-17 08:18:26,577 - DEBUG - hashTable program Started
+2023-04-17 08:18:26,578 - DEBUG - --- end emit
+2023-04-17 08:27:30,903 - DEBUG -  ---  start emit2023-04-17 08:27:30.903261
+2023-04-17 08:27:30,903 - DEBUG - command (1) not recognized
+2023-04-17 08:27:30,903 - DEBUG - --- end emit
+2023-04-17 08:29:21,711 - DEBUG -  ---  start emit2023-04-17 08:29:21.711592
+2023-04-17 08:29:21,711 - DEBUG - hashTable program Started
+2023-04-17 08:29:21,712 - DEBUG - --- end emit
+2023-04-17 08:29:57,318 - DEBUG -  ---  start emit2023-04-17 08:29:57.318634
+2023-04-17 08:29:57,318 - DEBUG - hashTable program Started
+2023-04-17 08:29:57,319 - DEBUG - --- end emit
+2023-04-17 08:33:05,077 - DEBUG -  ---  start emit2023-04-17 08:33:05.077401
+2023-04-17 08:33:05,077 - DEBUG - hashTable program Started
+2023-04-17 08:33:05,077 - DEBUG - --- end emit
+2023-04-17 08:33:30,261 - DEBUG -  ---  start emit2023-04-17 08:33:30.260905
+2023-04-17 08:33:30,261 - DEBUG - hashTable program Started
+2023-04-17 08:33:30,261 - DEBUG - --- end emit
+2023-04-17 08:33:57,560 - DEBUG -  ---  start emit2023-04-17 08:33:57.560133
+2023-04-17 08:33:57,560 - DEBUG - hashTable program Started
+2023-04-17 08:33:57,560 - DEBUG - --- end emit
+2023-04-17 08:33:58,905 - DEBUG -  ---  start emit2023-04-17 08:33:58.904982
+2023-04-17 08:33:58,905 - DEBUG -  failed to load data (savedData.json) [Errno 2] No such file or directory: 'savedData.json'
+2023-04-17 08:33:58,905 - DEBUG - --- end emit
+2023-04-17 08:34:22,160 - DEBUG -  ---  start emit2023-04-17 08:34:22.160898
+2023-04-17 08:34:22,161 - DEBUG -  failed to load data (savedData.json) [Errno 2] No such file or directory: 'savedData.json'
+2023-04-17 08:34:22,161 - DEBUG - --- end emit
+2023-04-17 08:34:42,888 - DEBUG -  ---  start emit2023-04-17 08:34:42.888901
+2023-04-17 08:34:42,889 - DEBUG -  failed to load data (savedData.json) Expecting value: line 1 column 1 (char 0)
+2023-04-17 08:34:42,889 - DEBUG - --- end emit
+2023-04-17 08:35:04,607 - DEBUG -  ---  start emit2023-04-17 08:35:04.607696
+2023-04-17 08:35:04,607 - DEBUG - hashTable program Started
+2023-04-17 08:35:04,607 - DEBUG - --- end emit
+2023-04-17 08:35:05,993 - DEBUG -  ---  start emit2023-04-17 08:35:05.993386
+2023-04-17 08:35:05,993 - DEBUG -  failed to load data (savedData.json) Expecting property name enclosed in double quotes: line 2 column 2 (char 3)
+2023-04-17 08:35:05,993 - DEBUG - --- end emit
+2023-04-17 08:36:13,057 - DEBUG -  ---  start emit2023-04-17 08:36:13.057425
+2023-04-17 08:36:13,058 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 08:36:13,058 - DEBUG - --- end emit
+2023-04-17 09:05:52,273 - DEBUG -  ---  start emit2023-04-17 09:05:52.273468
+2023-04-17 09:05:52,273 - DEBUG - hashTable program Started
+2023-04-17 09:05:52,273 - DEBUG - --- end emit
+2023-04-17 09:06:22,568 - DEBUG -  ---  start emit2023-04-17 09:06:22.568481
+2023-04-17 09:06:22,568 - DEBUG - hashTable program Started
+2023-04-17 09:06:22,568 - DEBUG - --- end emit
+2023-04-17 09:06:24,356 - DEBUG -  ---  start emit2023-04-17 09:06:24.356570
+2023-04-17 09:06:24,356 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 09:06:24,356 - DEBUG - --- end emit
+2023-04-17 09:08:18,748 - DEBUG -  ---  start emit2023-04-17 09:08:18.748358
+2023-04-17 09:08:18,748 - DEBUG - hashTable program Started
+2023-04-17 09:08:18,748 - DEBUG - --- end emit
+2023-04-17 09:08:38,995 - DEBUG -  ---  start emit2023-04-17 09:08:38.995233
+2023-04-17 09:08:38,995 - DEBUG - hashTable program Started
+2023-04-17 09:08:38,995 - DEBUG - --- end emit
+2023-04-17 09:09:14,143 - DEBUG -  ---  start emit2023-04-17 09:09:14.143596
+2023-04-17 09:09:14,143 - DEBUG - hashTable program Started
+2023-04-17 09:09:14,143 - DEBUG - --- end emit
+2023-04-17 09:09:15,372 - DEBUG -  ---  start emit2023-04-17 09:09:15.372508
+2023-04-17 09:09:15,372 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 09:09:15,372 - DEBUG - --- end emit
+2023-04-17 09:09:51,996 - DEBUG -  ---  start emit2023-04-17 09:09:51.996113
+2023-04-17 09:09:51,996 - DEBUG - hashTable program Started
+2023-04-17 09:09:51,996 - DEBUG - --- end emit
+2023-04-17 09:09:53,319 - DEBUG -  ---  start emit2023-04-17 09:09:53.319162
+2023-04-17 09:09:53,319 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 09:09:53,319 - DEBUG - --- end emit
+2023-04-17 13:50:38,602 - DEBUG -  ---  start emit2023-04-17 13:50:38.601577
+2023-04-17 13:50:38,603 - DEBUG - hashTable program Started
+2023-04-17 13:50:38,603 - DEBUG - --- end emit
+2023-04-17 13:50:42,401 - DEBUG -  ---  start emit2023-04-17 13:50:42.401712
+2023-04-17 13:50:42,401 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 13:50:42,401 - DEBUG - --- end emit
+2023-04-17 13:55:31,436 - DEBUG -  ---  start emit2023-04-17 13:55:31.436729
+2023-04-17 13:55:31,437 - DEBUG - hashTable program Started
+2023-04-17 13:55:31,437 - DEBUG - --- end emit
+2023-04-17 13:55:32,816 - DEBUG -  ---  start emit2023-04-17 13:55:32.816101
+2023-04-17 13:55:32,816 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 13:55:32,816 - DEBUG - --- end emit
+2023-04-17 13:57:21,380 - DEBUG -  ---  start emit2023-04-17 13:57:21.380381
+2023-04-17 13:57:21,381 - DEBUG - hashTable program Started
+2023-04-17 13:57:21,381 - DEBUG - --- end emit
+2023-04-17 13:57:22,653 - DEBUG -  ---  start emit2023-04-17 13:57:22.653289
+2023-04-17 13:57:22,654 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 13:57:22,654 - DEBUG - --- end emit
+2023-04-17 13:58:38,902 - DEBUG -  ---  start emit2023-04-17 13:58:38.902264
+2023-04-17 13:58:38,904 - DEBUG - hashTable program Started
+2023-04-17 13:58:38,904 - DEBUG - --- end emit
+2023-04-17 13:58:41,363 - DEBUG -  ---  start emit2023-04-17 13:58:41.363910
+2023-04-17 13:58:41,364 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 13:58:41,364 - DEBUG - --- end emit
+2023-04-17 14:01:32,806 - DEBUG -  ---  start emit2023-04-17 14:01:32.806183
+2023-04-17 14:01:32,806 - DEBUG - hashTable program Started
+2023-04-17 14:01:32,807 - DEBUG - --- end emit
+2023-04-17 14:01:36,271 - DEBUG -  ---  start emit2023-04-17 14:01:36.271932
+2023-04-17 14:01:36,272 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 14:01:36,272 - DEBUG - --- end emit
+2023-04-17 14:02:08,921 - DEBUG -  ---  start emit2023-04-17 14:02:08.921252
+2023-04-17 14:02:08,921 - DEBUG - hashTable program Started
+2023-04-17 14:02:08,922 - DEBUG - --- end emit
+2023-04-17 14:02:10,389 - DEBUG -  ---  start emit2023-04-17 14:02:10.389148
+2023-04-17 14:02:10,389 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 14:02:10,389 - DEBUG - --- end emit
+2023-04-17 14:02:44,990 - DEBUG -  ---  start emit2023-04-17 14:02:44.989804
+2023-04-17 14:02:44,990 - DEBUG - hashTable program Started
+2023-04-17 14:02:44,990 - DEBUG - --- end emit
+2023-04-17 14:02:46,583 - DEBUG -  ---  start emit2023-04-17 14:02:46.583254
+2023-04-17 14:02:46,584 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 14:02:46,584 - DEBUG - --- end emit
+2023-04-17 14:03:29,264 - DEBUG -  ---  start emit2023-04-17 14:03:29.264259
+2023-04-17 14:03:29,264 - DEBUG - hashTable program Started
+2023-04-17 14:03:29,265 - DEBUG - --- end emit
+2023-04-17 14:05:12,613 - DEBUG -  ---  start emit2023-04-17 14:05:12.613300
+2023-04-17 14:05:12,613 - DEBUG - hashTable program Started
+2023-04-17 14:05:12,613 - DEBUG - --- end emit
+2023-04-17 14:05:14,677 - DEBUG -  ---  start emit2023-04-17 14:05:14.677463
+2023-04-17 14:05:14,677 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 14:05:14,677 - DEBUG - --- end emit
+2023-04-17 14:06:28,430 - DEBUG -  ---  start emit2023-04-17 14:06:28.430702
+2023-04-17 14:06:28,431 - DEBUG - hashTable program Started
+2023-04-17 14:06:28,431 - DEBUG - --- end emit
+2023-04-17 15:59:13,914 - DEBUG -  ---  start emit2023-04-17 15:59:13.912818
+2023-04-17 15:59:13,914 - DEBUG - hashTable program Started
+2023-04-17 15:59:13,915 - DEBUG - --- end emit
+2023-04-17 16:01:19,117 - DEBUG -  ---  start emit2023-04-17 16:01:19.117597
+2023-04-17 16:01:19,117 - DEBUG - hashTable program Started
+2023-04-17 16:01:19,117 - DEBUG - --- end emit
+2023-04-17 16:02:44,574 - DEBUG -  ---  start emit2023-04-17 16:02:44.573774
+2023-04-17 16:02:44,575 - DEBUG - hashTable program Started
+2023-04-17 16:02:44,575 - DEBUG - --- end emit
+2023-04-17 16:07:22,902 - DEBUG -  ---  start emit2023-04-17 16:07:22.901948
+2023-04-17 16:07:22,902 - DEBUG - hashTable program Started
+2023-04-17 16:07:22,903 - DEBUG - --- end emit
+2023-04-17 16:07:42,707 - DEBUG -  ---  start emit2023-04-17 16:07:42.706081
+2023-04-17 16:07:42,707 - DEBUG - hashTable program Started
+2023-04-17 16:07:42,707 - DEBUG - --- end emit
+2023-04-17 16:08:06,926 - DEBUG -  ---  start emit2023-04-17 16:08:06.926093
+2023-04-17 16:08:06,926 - DEBUG - hashTable program Started
+2023-04-17 16:08:06,926 - DEBUG - --- end emit
+2023-04-17 16:08:58,340 - DEBUG -  ---  start emit2023-04-17 16:08:58.339629
+2023-04-17 16:08:58,340 - DEBUG - hashTable program Started
+2023-04-17 16:08:58,340 - DEBUG - --- end emit
+2023-04-17 16:09:07,759 - DEBUG -  ---  start emit2023-04-17 16:09:07.758800
+2023-04-17 16:09:07,759 - DEBUG - hashTable program Started
+2023-04-17 16:09:07,759 - DEBUG - --- end emit
+2023-04-17 16:09:09,224 - DEBUG -  ---  start emit2023-04-17 16:09:09.224168
+2023-04-17 16:09:09,224 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:09:09,225 - DEBUG - --- end emit
+2023-04-17 16:09:50,228 - DEBUG -  ---  start emit2023-04-17 16:09:50.227960
+2023-04-17 16:09:50,228 - DEBUG - hashTable program Started
+2023-04-17 16:09:50,228 - DEBUG - --- end emit
+2023-04-17 16:09:52,018 - DEBUG -  ---  start emit2023-04-17 16:09:52.018086
+2023-04-17 16:09:52,018 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:09:52,019 - DEBUG - --- end emit
+2023-04-17 16:10:17,857 - DEBUG -  ---  start emit2023-04-17 16:10:17.856411
+2023-04-17 16:10:17,857 - DEBUG - hashTable program Started
+2023-04-17 16:10:17,858 - DEBUG - --- end emit
+2023-04-17 16:10:19,272 - DEBUG -  ---  start emit2023-04-17 16:10:19.272159
+2023-04-17 16:10:19,272 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:10:19,272 - DEBUG - --- end emit
+2023-04-17 16:11:44,120 - DEBUG -  ---  start emit2023-04-17 16:11:44.119437
+2023-04-17 16:11:44,120 - DEBUG - hashTable program Started
+2023-04-17 16:11:44,120 - DEBUG - --- end emit
+2023-04-17 16:11:46,415 - DEBUG -  ---  start emit2023-04-17 16:11:46.415293
+2023-04-17 16:11:46,415 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:11:46,416 - DEBUG - --- end emit
+2023-04-17 16:12:19,358 - DEBUG -  ---  start emit2023-04-17 16:12:19.357830
+2023-04-17 16:12:19,358 - DEBUG - hashTable program Started
+2023-04-17 16:12:19,358 - DEBUG - --- end emit
+2023-04-17 16:12:20,722 - DEBUG -  ---  start emit2023-04-17 16:12:20.722334
+2023-04-17 16:12:20,722 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:12:20,722 - DEBUG - --- end emit
+2023-04-17 16:14:02,251 - DEBUG -  ---  start emit2023-04-17 16:14:02.249690
+2023-04-17 16:14:02,252 - DEBUG - hashTable program Started
+2023-04-17 16:14:02,252 - DEBUG - --- end emit
+2023-04-17 16:14:03,636 - DEBUG -  ---  start emit2023-04-17 16:14:03.636092
+2023-04-17 16:14:03,636 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:14:03,636 - DEBUG - --- end emit
+2023-04-17 16:14:38,054 - DEBUG -  ---  start emit2023-04-17 16:14:38.053340
+2023-04-17 16:14:38,054 - DEBUG - hashTable program Started
+2023-04-17 16:14:38,054 - DEBUG - --- end emit
+2023-04-17 16:14:40,681 - DEBUG -  ---  start emit2023-04-17 16:14:40.680889
+2023-04-17 16:14:40,681 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:14:40,681 - DEBUG - --- end emit
+2023-04-17 16:14:55,153 - DEBUG -  ---  start emit2023-04-17 16:14:55.153824
+2023-04-17 16:14:55,154 - DEBUG - command () not recognized
+2023-04-17 16:14:55,154 - DEBUG - --- end emit
+2023-04-17 16:14:56,714 - DEBUG -  ---  start emit2023-04-17 16:14:56.714655
+2023-04-17 16:14:56,714 - DEBUG - command () not recognized
+2023-04-17 16:14:56,714 - DEBUG - --- end emit
+2023-04-17 16:16:41,035 - DEBUG -  ---  start emit2023-04-17 16:16:41.035698
+2023-04-17 16:16:41,036 - DEBUG - hashTable program Started
+2023-04-17 16:16:41,036 - DEBUG - --- end emit
+2023-04-17 16:16:43,730 - DEBUG -  ---  start emit2023-04-17 16:16:43.730056
+2023-04-17 16:16:43,730 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:16:43,730 - DEBUG - --- end emit
+2023-04-17 16:21:10,209 - DEBUG -  ---  start emit2023-04-17 16:21:10.209283
+2023-04-17 16:21:10,209 - DEBUG - hashTable program Started
+2023-04-17 16:21:10,209 - DEBUG - --- end emit
+2023-04-17 16:21:11,314 - DEBUG -  ---  start emit2023-04-17 16:21:11.314884
+2023-04-17 16:21:11,315 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:21:11,315 - DEBUG - --- end emit
+2023-04-17 16:22:07,015 - DEBUG -  ---  start emit2023-04-17 16:22:07.014745
+2023-04-17 16:22:07,015 - DEBUG - Graph program Started
+2023-04-17 16:22:07,016 - DEBUG - --- end emit
+2023-04-17 16:22:09,329 - DEBUG -  ---  start emit2023-04-17 16:22:09.329138
+2023-04-17 16:22:09,330 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:22:09,330 - DEBUG - --- end emit
+2023-04-17 16:23:55,970 - DEBUG -  ---  start emit2023-04-17 16:23:55.970419
+2023-04-17 16:23:55,970 - DEBUG - Graph program Started
+2023-04-17 16:23:55,971 - DEBUG - --- end emit
+2023-04-17 16:23:57,782 - DEBUG -  ---  start emit2023-04-17 16:23:57.782132
+2023-04-17 16:23:57,782 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:23:57,782 - DEBUG - --- end emit
+2023-04-17 16:24:49,017 - DEBUG -  ---  start emit2023-04-17 16:24:49.017309
+2023-04-17 16:24:49,017 - DEBUG - Graph program Started
+2023-04-17 16:24:49,017 - DEBUG - --- end emit
+2023-04-17 16:29:48,094 - DEBUG -  ---  start emit2023-04-17 16:29:48.094268
+2023-04-17 16:29:48,094 - DEBUG - Graph program Started
+2023-04-17 16:29:48,094 - DEBUG - --- end emit
+2023-04-17 16:30:04,046 - DEBUG -  ---  start emit2023-04-17 16:30:04.045794
+2023-04-17 16:30:04,046 - DEBUG - Graph program Started
+2023-04-17 16:30:04,047 - DEBUG - --- end emit
+2023-04-17 16:30:06,763 - DEBUG -  ---  start emit2023-04-17 16:30:06.763316
+2023-04-17 16:30:06,763 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:30:06,763 - DEBUG - --- end emit
+2023-04-17 16:30:54,068 - DEBUG -  ---  start emit2023-04-17 16:30:54.067685
+2023-04-17 16:30:54,069 - DEBUG - Graph program Started
+2023-04-17 16:30:54,069 - DEBUG - --- end emit
+2023-04-17 16:30:56,019 - DEBUG -  ---  start emit2023-04-17 16:30:56.019332
+2023-04-17 16:30:56,019 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:30:56,019 - DEBUG - --- end emit
+2023-04-17 16:31:14,207 - DEBUG -  ---  start emit2023-04-17 16:31:14.206748
+2023-04-17 16:31:14,207 - DEBUG - Graph program Started
+2023-04-17 16:31:14,207 - DEBUG - --- end emit
+2023-04-17 16:31:15,425 - DEBUG -  ---  start emit2023-04-17 16:31:15.424896
+2023-04-17 16:31:15,425 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:31:15,425 - DEBUG - --- end emit
+2023-04-17 16:32:45,509 - DEBUG -  ---  start emit2023-04-17 16:32:45.509272
+2023-04-17 16:32:45,510 - DEBUG - Graph program Started
+2023-04-17 16:32:45,510 - DEBUG - --- end emit
+2023-04-17 16:32:46,942 - DEBUG -  ---  start emit2023-04-17 16:32:46.942105
+2023-04-17 16:32:46,942 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:32:46,943 - DEBUG - --- end emit
+2023-04-17 16:33:36,908 - DEBUG -  ---  start emit2023-04-17 16:33:36.907999
+2023-04-17 16:33:36,908 - DEBUG - Graph program Started
+2023-04-17 16:33:36,908 - DEBUG - --- end emit
+2023-04-17 16:33:38,150 - DEBUG -  ---  start emit2023-04-17 16:33:38.150107
+2023-04-17 16:33:38,151 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:33:38,151 - DEBUG - --- end emit
+2023-04-17 16:34:00,833 - DEBUG -  ---  start emit2023-04-17 16:34:00.833240
+2023-04-17 16:34:00,834 - DEBUG - Graph program Started
+2023-04-17 16:34:00,834 - DEBUG - --- end emit
+2023-04-17 16:34:02,393 - DEBUG -  ---  start emit2023-04-17 16:34:02.393872
+2023-04-17 16:34:02,394 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:34:02,394 - DEBUG - --- end emit
+2023-04-17 16:34:48,083 - DEBUG -  ---  start emit2023-04-17 16:34:48.083397
+2023-04-17 16:34:48,083 - DEBUG - Graph program Started
+2023-04-17 16:34:48,084 - DEBUG - --- end emit
+2023-04-17 16:34:49,524 - DEBUG -  ---  start emit2023-04-17 16:34:49.524620
+2023-04-17 16:34:49,524 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:34:49,525 - DEBUG - --- end emit
+2023-04-17 16:40:42,257 - DEBUG -  ---  start emit2023-04-17 16:40:42.257124
+2023-04-17 16:40:42,257 - DEBUG - Graph program Started
+2023-04-17 16:40:42,257 - DEBUG - --- end emit
+2023-04-17 16:40:43,459 - DEBUG -  ---  start emit2023-04-17 16:40:43.459322
+2023-04-17 16:40:43,459 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:40:43,459 - DEBUG - --- end emit
+2023-04-17 16:41:19,752 - DEBUG -  ---  start emit2023-04-17 16:41:19.751692
+2023-04-17 16:41:19,752 - DEBUG - Graph program Started
+2023-04-17 16:41:19,752 - DEBUG - --- end emit
+2023-04-17 16:41:23,169 - DEBUG -  ---  start emit2023-04-17 16:41:23.169195
+2023-04-17 16:41:23,170 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:41:23,171 - DEBUG - --- end emit
+2023-04-17 16:43:41,476 - DEBUG -  ---  start emit2023-04-17 16:43:41.476745
+2023-04-17 16:43:41,477 - DEBUG - Graph program Started
+2023-04-17 16:43:41,477 - DEBUG - --- end emit
+2023-04-17 16:43:42,886 - DEBUG -  ---  start emit2023-04-17 16:43:42.886771
+2023-04-17 16:43:42,887 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:43:42,887 - DEBUG - --- end emit
+2023-04-17 16:44:14,653 - DEBUG -  ---  start emit2023-04-17 16:44:14.653320
+2023-04-17 16:44:14,653 - DEBUG - command ([a) not recognized
+2023-04-17 16:44:14,653 - DEBUG - --- end emit
+2023-04-17 16:45:19,064 - DEBUG -  ---  start emit2023-04-17 16:45:19.063683
+2023-04-17 16:45:19,064 - DEBUG - Graph program Started
+2023-04-17 16:45:19,064 - DEBUG - --- end emit
+2023-04-17 16:45:20,638 - DEBUG -  ---  start emit2023-04-17 16:45:20.637980
+2023-04-17 16:45:20,638 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:45:20,638 - DEBUG - --- end emit
+2023-04-17 16:45:37,931 - DEBUG -  ---  start emit2023-04-17 16:45:37.930747
+2023-04-17 16:45:37,931 - DEBUG - Graph program Started
+2023-04-17 16:45:37,931 - DEBUG - --- end emit
+2023-04-17 16:45:39,031 - DEBUG -  ---  start emit2023-04-17 16:45:39.031394
+2023-04-17 16:45:39,031 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:45:39,031 - DEBUG - --- end emit
+2023-04-17 16:46:19,682 - DEBUG -  ---  start emit2023-04-17 16:46:19.682103
+2023-04-17 16:46:19,683 - DEBUG - Graph program Started
+2023-04-17 16:46:19,683 - DEBUG - --- end emit
+2023-04-17 16:46:21,217 - DEBUG -  ---  start emit2023-04-17 16:46:21.217695
+2023-04-17 16:46:21,218 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:46:21,218 - DEBUG - --- end emit
+2023-04-17 16:47:16,262 - DEBUG -  ---  start emit2023-04-17 16:47:16.261401
+2023-04-17 16:47:16,262 - DEBUG - Graph program Started
+2023-04-17 16:47:16,262 - DEBUG - --- end emit
+2023-04-17 16:47:17,673 - DEBUG -  ---  start emit2023-04-17 16:47:17.673080
+2023-04-17 16:47:17,673 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:47:17,673 - DEBUG - --- end emit
+2023-04-17 16:48:04,525 - DEBUG -  ---  start emit2023-04-17 16:48:04.525164
+2023-04-17 16:48:04,526 - DEBUG - Graph program Started
+2023-04-17 16:48:04,526 - DEBUG - --- end emit
+2023-04-17 16:48:05,638 - DEBUG -  ---  start emit2023-04-17 16:48:05.638429
+2023-04-17 16:48:05,638 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:48:05,638 - DEBUG - --- end emit
+2023-04-17 16:48:39,245 - DEBUG -  ---  start emit2023-04-17 16:48:39.245594
+2023-04-17 16:48:39,245 - DEBUG - Graph program Started
+2023-04-17 16:48:39,245 - DEBUG - --- end emit
+2023-04-17 16:48:40,462 - DEBUG -  ---  start emit2023-04-17 16:48:40.462204
+2023-04-17 16:48:40,462 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:48:40,462 - DEBUG - --- end emit
+2023-04-17 16:57:37,774 - DEBUG -  ---  start emit2023-04-17 16:57:37.773936
+2023-04-17 16:57:37,774 - DEBUG - Graph program Started
+2023-04-17 16:57:37,774 - DEBUG - --- end emit
+2023-04-17 16:57:39,145 - DEBUG -  ---  start emit2023-04-17 16:57:39.145654
+2023-04-17 16:57:39,146 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:57:39,146 - DEBUG - --- end emit
+2023-04-17 16:59:00,124 - DEBUG -  ---  start emit2023-04-17 16:59:00.124477
+2023-04-17 16:59:00,125 - DEBUG - Graph program Started
+2023-04-17 16:59:00,125 - DEBUG - --- end emit
+2023-04-17 16:59:01,472 - DEBUG -  ---  start emit2023-04-17 16:59:01.472377
+2023-04-17 16:59:01,472 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:59:01,472 - DEBUG - --- end emit
+2023-04-17 16:59:50,717 - DEBUG -  ---  start emit2023-04-17 16:59:50.717464
+2023-04-17 16:59:50,718 - DEBUG - Graph program Started
+2023-04-17 16:59:50,718 - DEBUG - --- end emit
+2023-04-17 16:59:52,200 - DEBUG -  ---  start emit2023-04-17 16:59:52.200199
+2023-04-17 16:59:52,200 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 16:59:52,200 - DEBUG - --- end emit
+2023-04-17 17:01:44,299 - DEBUG -  ---  start emit2023-04-17 17:01:44.299055
+2023-04-17 17:01:44,299 - DEBUG - Graph program Started
+2023-04-17 17:01:44,300 - DEBUG - --- end emit
+2023-04-17 17:01:45,420 - DEBUG -  ---  start emit2023-04-17 17:01:45.420520
+2023-04-17 17:01:45,421 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 17:01:45,421 - DEBUG - --- end emit
+2023-04-17 17:03:08,323 - DEBUG -  ---  start emit2023-04-17 17:03:08.323507
+2023-04-17 17:03:08,324 - DEBUG - Graph program Started
+2023-04-17 17:03:08,324 - DEBUG - --- end emit
+2023-04-17 17:03:09,435 - DEBUG -  ---  start emit2023-04-17 17:03:09.435058
+2023-04-17 17:03:09,435 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 17:03:09,435 - DEBUG - --- end emit
+2023-04-17 17:03:55,590 - DEBUG -  ---  start emit2023-04-17 17:03:55.589478
+2023-04-17 17:03:55,590 - DEBUG - Graph program Started
+2023-04-17 17:03:55,590 - DEBUG - --- end emit
+2023-04-17 17:03:56,595 - DEBUG -  ---  start emit2023-04-17 17:03:56.595488
+2023-04-17 17:03:56,595 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 17:03:56,595 - DEBUG - --- end emit
+2023-04-17 17:04:18,531 - DEBUG -  ---  start emit2023-04-17 17:04:18.531051
+2023-04-17 17:04:18,532 - DEBUG - Graph program Started
+2023-04-17 17:04:18,532 - DEBUG - --- end emit
+2023-04-17 17:04:20,442 - DEBUG -  ---  start emit2023-04-17 17:04:20.442225
+2023-04-17 17:04:20,442 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 17:04:20,442 - DEBUG - --- end emit
+2023-04-17 17:04:40,208 - DEBUG -  ---  start emit2023-04-17 17:04:40.206642
+2023-04-17 17:04:40,208 - DEBUG - Graph program Started
+2023-04-17 17:04:40,208 - DEBUG - --- end emit
+2023-04-17 17:04:41,267 - DEBUG -  ---  start emit2023-04-17 17:04:41.266986
+2023-04-17 17:04:41,267 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 17:04:41,267 - DEBUG - --- end emit
+2023-04-17 17:05:20,786 - DEBUG -  ---  start emit2023-04-17 17:05:20.785767
+2023-04-17 17:05:20,794 - DEBUG - Graph program Started
+2023-04-17 17:05:20,794 - DEBUG - --- end emit
+2023-04-17 17:05:24,163 - DEBUG -  ---  start emit2023-04-17 17:05:24.163593
+2023-04-17 17:05:24,163 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 17:05:24,165 - DEBUG - --- end emit
+2023-04-17 17:05:46,722 - DEBUG -  ---  start emit2023-04-17 17:05:46.721873
+2023-04-17 17:05:46,722 - DEBUG - Graph program Started
+2023-04-17 17:05:46,722 - DEBUG - --- end emit
+2023-04-17 17:05:47,460 - DEBUG -  ---  start emit2023-04-17 17:05:47.459642
+2023-04-17 17:05:47,460 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 17:05:47,460 - DEBUG - --- end emit
+2023-04-17 17:06:42,753 - DEBUG -  ---  start emit2023-04-17 17:06:42.753053
+2023-04-17 17:06:42,753 - DEBUG - Graph program Started
+2023-04-17 17:06:42,753 - DEBUG - --- end emit
+2023-04-17 17:06:44,151 - DEBUG -  ---  start emit2023-04-17 17:06:44.151164
+2023-04-17 17:06:44,151 - DEBUG -  table data (savedData.json) loaded
+2023-04-17 17:06:44,151 - DEBUG - --- end emit
+2023-04-18 08:35:18,385 - DEBUG -  ---  start emit2023-04-18 08:35:18.385014
+2023-04-18 08:35:18,385 - DEBUG - Graph program Started
+2023-04-18 08:35:18,385 - DEBUG - --- end emit
+2023-04-18 08:35:20,361 - DEBUG -  ---  start emit2023-04-18 08:35:20.361582
+2023-04-18 08:35:20,361 - DEBUG -  table data (savedData.json) loaded
+2023-04-18 08:35:20,362 - DEBUG - --- end emit
+2023-04-18 08:35:27,138 - DEBUG -  ---  start emit2023-04-18 08:35:27.138342
+2023-04-18 08:35:27,138 - DEBUG -  table data (savedData.json) loaded
+2023-04-18 08:35:27,138 - DEBUG - --- end emit
+2023-04-18 08:36:44,517 - DEBUG -  ---  start emit2023-04-18 08:36:44.517723
+2023-04-18 08:36:44,518 - DEBUG - command (e) not recognized
+2023-04-18 08:36:44,518 - DEBUG - --- end emit
+2023-04-18 08:38:52,956 - DEBUG -  ---  start emit2023-04-18 08:38:52.956572
+2023-04-18 08:38:52,957 - DEBUG - Graph program Started
+2023-04-18 08:38:52,957 - DEBUG - --- end emit
+2023-04-18 08:38:55,445 - DEBUG -  ---  start emit2023-04-18 08:38:55.445122
+2023-04-18 08:38:55,445 - DEBUG -  failed to load data (['cippa']) expected str, bytes or os.PathLike object, not list
+2023-04-18 08:38:55,445 - DEBUG - --- end emit
+2023-04-18 08:39:15,509 - DEBUG -  ---  start emit2023-04-18 08:39:15.509280
+2023-04-18 08:39:15,509 - DEBUG -  failed to load data (['cippa.json']) expected str, bytes or os.PathLike object, not list
+2023-04-18 08:39:15,509 - DEBUG - --- end emit
+2023-04-18 08:39:20,599 - DEBUG -  ---  start emit2023-04-18 08:39:20.599093
+2023-04-18 08:39:20,599 - DEBUG -  table data (savedData.json) loaded
+2023-04-18 08:39:20,599 - DEBUG - --- end emit
+2023-04-18 08:40:19,977 - DEBUG -  ---  start emit2023-04-18 08:40:19.976702
+2023-04-18 08:40:19,977 - DEBUG - Graph program Started
+2023-04-18 08:40:19,977 - DEBUG - --- end emit
+2023-04-18 08:40:31,070 - DEBUG -  ---  start emit2023-04-18 08:40:31.069235
+2023-04-18 08:40:31,070 - DEBUG - Graph program Started
+2023-04-18 08:40:31,071 - DEBUG - --- end emit
+2023-04-18 08:40:34,140 - DEBUG -  ---  start emit2023-04-18 08:40:34.140757
+2023-04-18 08:40:34,141 - DEBUG -  table data (savedData.json) loaded
+2023-04-18 08:40:34,141 - DEBUG - --- end emit
+2023-04-18 08:43:36,302 - DEBUG -  ---  start emit2023-04-18 08:43:36.301794
+2023-04-18 08:43:36,303 - DEBUG - Graph program Started
+2023-04-18 08:43:36,303 - DEBUG - --- end emit
+2023-04-18 08:50:37,987 - DEBUG -  ---  start emit2023-04-18 08:50:37.986560
+2023-04-18 08:50:37,987 - DEBUG - Graph program Started
+2023-04-18 08:50:37,987 - DEBUG - --- end emit
+2023-04-18 08:50:42,513 - DEBUG -  ---  start emit2023-04-18 08:50:42.513387
+2023-04-18 08:50:42,514 - DEBUG -  table data (savedData.json) loaded
+2023-04-18 08:50:42,514 - DEBUG - --- end emit
+2023-04-18 08:52:38,946 - DEBUG -  ---  start emit2023-04-18 08:52:38.945879
+2023-04-18 08:52:38,946 - DEBUG - Graph program Started
+2023-04-18 08:52:38,946 - DEBUG - --- end emit
+2023-04-18 08:52:42,705 - DEBUG -  ---  start emit2023-04-18 08:52:42.705121
+2023-04-18 08:52:42,705 - DEBUG -  table data (savedData.json) loaded
+2023-04-18 08:52:42,705 - DEBUG - --- end emit
+2023-04-18 08:53:00,712 - DEBUG -  ---  start emit2023-04-18 08:53:00.711910
+2023-04-18 08:53:00,712 - DEBUG - Graph program Started
+2023-04-18 08:53:00,712 - DEBUG - --- end emit
+2023-04-18 08:53:02,764 - DEBUG -  ---  start emit2023-04-18 08:53:02.764517
+2023-04-18 08:53:02,764 - DEBUG -  table data (savedData.json) loaded
+2023-04-18 08:53:02,764 - DEBUG - --- end emit
+2023-04-18 08:53:32,928 - DEBUG -  ---  start emit2023-04-18 08:53:32.928617
+2023-04-18 08:53:32,929 - DEBUG - Graph program Started
+2023-04-18 08:53:32,929 - DEBUG - --- end emit
+2023-04-18 08:53:34,594 - DEBUG -  ---  start emit2023-04-18 08:53:34.594255
+2023-04-18 08:53:34,594 - DEBUG -  table data (savedData.json) loaded
+2023-04-18 08:53:34,594 - DEBUG - --- end emit
+2023-04-18 08:55:24,054 - DEBUG -  ---  start emit2023-04-18 08:55:24.054125
+2023-04-18 08:55:24,055 - DEBUG - Graph program Started
+2023-04-18 08:55:24,055 - DEBUG - --- end emit
+2023-04-18 08:55:25,564 - DEBUG -  ---  start emit2023-04-18 08:55:25.564486
+2023-04-18 08:55:25,564 - DEBUG -  table data (savedData.json) loaded
+2023-04-18 08:55:25,564 - DEBUG - --- end emit
+2023-04-18 08:55:29,890 - DEBUG -  ---  start emit2023-04-18 08:55:29.890662
+2023-04-18 08:55:29,890 - DEBUG -  traversing graph (savedData.json) with DSF
+2023-04-18 08:55:29,891 - DEBUG - --- end emit
+2023-04-18 08:55:35,447 - DEBUG -  ---  start emit2023-04-18 08:55:35.447832
+2023-04-18 08:55:35,447 - DEBUG -  traversing graph (savedData.json) with DSF
+2023-04-18 08:55:35,448 - DEBUG - --- end emit
+2023-04-18 08:57:35,252 - DEBUG -  ---  start emit2023-04-18 08:57:35.251952
+2023-04-18 08:57:35,253 - DEBUG - Graph program Started
+2023-04-18 08:57:35,253 - DEBUG - --- end emit
+2023-04-18 08:57:51,252 - DEBUG -  ---  start emit2023-04-18 08:57:51.252830
+2023-04-18 08:57:51,253 - DEBUG -  table data (savedData.json) loaded
+2023-04-18 08:57:51,253 - DEBUG - --- end emit
+2023-04-18 08:57:57,374 - DEBUG -  ---  start emit2023-04-18 08:57:57.374686
+2023-04-18 08:57:57,374 - DEBUG -  traversing graph (savedData.json) with BFS
+2023-04-18 08:57:57,374 - DEBUG - --- end emit
+2023-04-18 08:58:19,799 - DEBUG -  ---  start emit2023-04-18 08:58:19.799816
+2023-04-18 08:58:19,800 - DEBUG -  traversing graph (savedData.json) with DSF
+2023-04-18 08:58:19,800 - DEBUG - --- end emit
+2023-04-18 09:00:30,504 - DEBUG -  ---  start emit2023-04-18 09:00:30.503376
+2023-04-18 09:00:30,504 - DEBUG - Graph program Started
+2023-04-18 09:00:30,504 - DEBUG - --- end emit
+2023-04-18 09:00:32,668 - DEBUG -  ---  start emit2023-04-18 09:00:32.668860
+2023-04-18 09:00:32,669 - DEBUG -  table data (savedData.json) loaded
+2023-04-18 09:00:32,669 - DEBUG - --- end emit
+2023-04-18 09:00:35,817 - DEBUG -  ---  start emit2023-04-18 09:00:35.817358
+2023-04-18 09:00:35,817 - DEBUG -  traversing graph (savedData.json) with BFS
+2023-04-18 09:00:35,817 - DEBUG - --- end emit
+2023-04-18 09:03:32,309 - DEBUG -  ---  start emit2023-04-18 09:03:32.308930
+2023-04-18 09:03:32,309 - DEBUG - Graph program Started
+2023-04-18 09:03:32,309 - DEBUG - --- end emit
+2023-04-18 09:03:33,740 - DEBUG -  ---  start emit2023-04-18 09:03:33.740360
+2023-04-18 09:03:33,741 - DEBUG -  table data (savedData.json) loaded
+2023-04-18 09:03:33,741 - DEBUG - --- end emit
+2023-04-18 09:03:34,868 - DEBUG -  ---  start emit2023-04-18 09:03:34.868729
+2023-04-18 09:03:34,869 - DEBUG -  traversing graph (savedData.json) with DSF
+2023-04-18 09:03:34,869 - DEBUG - --- end emit
+2023-04-18 09:03:53,998 - DEBUG -  ---  start emit2023-04-18 09:03:53.998096
+2023-04-18 09:03:53,998 - DEBUG - Graph program Started
+2023-04-18 09:03:53,998 - DEBUG - --- end emit
+2023-04-18 09:03:56,029 - DEBUG -  ---  start emit2023-04-18 09:03:56.029456
+2023-04-18 09:03:56,029 - DEBUG -  table data (savedData.json) loaded
+2023-04-18 09:03:56,029 - DEBUG - --- end emit
+2023-04-18 09:03:57,018 - DEBUG -  ---  start emit2023-04-18 09:03:57.017991
+2023-04-18 09:03:57,018 - DEBUG -  traversing graph (savedData.json) with DSF
+2023-04-18 09:03:57,018 - DEBUG - --- end emit
+2023-04-18 09:03:59,287 - DEBUG -  ---  start emit2023-04-18 09:03:59.287593
+2023-04-18 09:03:59,288 - DEBUG - command () not recognized
+2023-04-18 09:03:59,288 - DEBUG - --- end emit
+2023-04-18 09:04:02,167 - DEBUG -  ---  start emit2023-04-18 09:04:02.167305
+2023-04-18 09:04:02,167 - DEBUG - command (ad) not recognized
+2023-04-18 09:04:02,167 - DEBUG - --- end emit
+2023-04-27 11:37:04,342 - DEBUG -  ---  start emit2023-04-27 11:37:04.342388
+2023-04-27 11:37:04,343 - DEBUG - Graph program Started
+2023-04-27 11:37:04,343 - DEBUG - --- end emit
+2023-04-27 11:43:18,112 - DEBUG -  ---  start emit2023-04-27 11:43:18.112847
+2023-04-27 11:43:18,114 - DEBUG - command () not recognized
+2023-04-27 11:43:18,114 - DEBUG - --- end emit
+2023-04-27 11:43:52,112 - DEBUG -  ---  start emit2023-04-27 11:43:52.112219
+2023-04-27 11:43:52,112 - DEBUG -  table data (savedData.json) loaded
+2023-04-27 11:43:52,112 - DEBUG - --- end emit
+2023-04-27 11:43:58,648 - DEBUG -  ---  start emit2023-04-27 11:43:58.648546
+2023-04-27 11:43:58,648 - DEBUG -  traversing graph (savedData.json) with DSF
+2023-04-27 11:43:58,648 - DEBUG - --- end emit
+2023-04-27 12:13:14,052 - DEBUG -  ---  start emit2023-04-27 12:13:14.052873
+2023-04-27 12:13:14,053 - DEBUG - command () not recognized
+2023-04-27 12:13:14,053 - DEBUG - --- end emit
+2023-04-27 12:13:14,263 - DEBUG -  ---  start emit2023-04-27 12:13:14.263231
+2023-04-27 12:13:14,263 - DEBUG - command () not recognized
+2023-04-27 12:13:14,263 - DEBUG - --- end emit
+2023-04-27 12:13:18,035 - DEBUG -  ---  start emit2023-04-27 12:13:18.035900
+2023-04-27 12:13:18,036 - DEBUG -  traversing graph (savedData.json) with DSF
+2023-04-27 12:13:18,036 - DEBUG - --- end emit

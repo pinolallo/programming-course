@@ -1,0 +1,129 @@
+2023-04-07 10:26:08,852 - DEBUG -  ---  start emit2023-04-07 10:26:08.852364
+2023-04-07 10:26:08,853 - DEBUG - hashTable program Started
+2023-04-07 10:26:08,853 - DEBUG - --- end emit
+2023-04-07 10:26:11,669 - DEBUG -  ---  start emit2023-04-07 10:26:11.669498
+2023-04-07 10:26:11,669 - DEBUG - loading default savedTable.json
+2023-04-07 10:26:11,669 - DEBUG - --- end emit
+2023-04-07 10:26:11,670 - DEBUG -  ---  start emit2023-04-07 10:26:11.670461
+2023-04-07 10:26:11,670 - DEBUG -  table data (savedTable.json) loaded
+2023-04-07 10:26:11,670 - DEBUG - --- end emit
+2023-04-14 15:36:26,826 - DEBUG -  ---  start emit2023-04-14 15:36:26.826423
+2023-04-14 15:36:26,827 - DEBUG - hashTable program Started
+2023-04-14 15:36:26,827 - DEBUG - --- end emit
+2023-04-14 15:36:34,140 - DEBUG -  ---  start emit2023-04-14 15:36:34.140257
+2023-04-14 15:36:34,140 - DEBUG -  table data () loaded
+2023-04-14 15:36:34,140 - DEBUG - --- end emit
+2023-04-14 15:38:05,769 - DEBUG -  ---  start emit2023-04-14 15:38:05.769418
+2023-04-14 15:38:05,769 - DEBUG - hashTable program Started
+2023-04-14 15:38:05,769 - DEBUG - --- end emit
+2023-04-14 15:38:08,106 - DEBUG -  ---  start emit2023-04-14 15:38:08.106656
+2023-04-14 15:38:08,106 - DEBUG - loading default savedTable.json
+2023-04-14 15:38:08,106 - DEBUG - --- end emit
+2023-04-14 15:38:08,107 - DEBUG -  ---  start emit2023-04-14 15:38:08.107469
+2023-04-14 15:38:08,107 - DEBUG -  table data (savedTable.json) loaded
+2023-04-14 15:38:08,107 - DEBUG - --- end emit
+2023-04-14 15:39:42,521 - DEBUG -  ---  start emit2023-04-14 15:39:42.520985
+2023-04-14 15:39:42,521 - DEBUG - hashTable program Started
+2023-04-14 15:39:42,521 - DEBUG - --- end emit
+2023-04-20 11:50:52,725 - DEBUG -  ---  start emit2023-04-20 11:50:52.725679
+2023-04-20 11:50:52,727 - DEBUG - hashTable program Started
+2023-04-20 11:50:52,727 - DEBUG - --- end emit
+2023-04-20 11:51:06,728 - DEBUG -  ---  start emit2023-04-20 11:51:06.728049
+2023-04-20 11:51:06,728 - DEBUG - created hashtable with size 10
+2023-04-20 11:51:06,728 - DEBUG - --- end emit
+2023-04-26 10:01:10,326 - DEBUG -  ---  start emit2023-04-26 10:01:10.326123
+2023-04-26 10:01:10,326 - DEBUG - hashTable program Started
+2023-04-26 10:01:10,326 - DEBUG - --- end emit
+2023-04-26 10:07:46,956 - DEBUG -  ---  start emit2023-04-26 10:07:46.955968
+2023-04-26 10:07:46,956 - DEBUG - the hash table is not initialized, please create table with size
+2023-04-26 10:07:46,956 - DEBUG - --- end emit
+2023-04-26 10:08:16,539 - DEBUG -  ---  start emit2023-04-26 10:08:16.539023
+2023-04-26 10:08:16,539 - DEBUG - the hash table is not initialized, please create table with size
+2023-04-26 10:08:16,539 - DEBUG - --- end emit
+2023-04-26 10:10:27,313 - DEBUG -  ---  start emit2023-04-26 10:10:27.313690
+2023-04-26 10:10:27,314 - DEBUG - command (bbb) not recognized
+2023-04-26 10:10:27,314 - DEBUG - --- end emit
+2023-04-26 10:11:34,882 - DEBUG -  ---  start emit2023-04-26 10:11:34.882141
+2023-04-26 10:11:34,882 - DEBUG - the hash table is not initialized, please create table with size
+2023-04-26 10:11:34,882 - DEBUG - --- end emit
+2023-04-26 10:13:42,959 - DEBUG -  ---  start emit2023-04-26 10:13:42.959785
+2023-04-26 10:13:42,960 - DEBUG - created hashtable with size 10
+2023-04-26 10:13:42,960 - DEBUG - --- end emit
+2023-04-26 10:25:00,391 - DEBUG -  ---  start emit2023-04-26 10:25:00.391678
+2023-04-26 10:25:00,391 - DEBUG - command (gr) not recognized
+2023-04-26 10:25:00,392 - DEBUG - --- end emit
+2023-04-26 10:26:35,754 - DEBUG -  ---  start emit2023-04-26 10:26:35.754628
+2023-04-26 10:26:35,754 - DEBUG -  failed to load data () module 'constants' has no attribute 'SAVED_TABLE_FILENAME'
+2023-04-26 10:26:35,755 - DEBUG - --- end emit
+2023-04-26 10:27:15,118 - DEBUG -  ---  start emit2023-04-26 10:27:15.118113
+2023-04-26 10:27:15,118 - DEBUG -  table data (savedTable.json) loaded
+2023-04-26 10:27:15,118 - DEBUG - --- end emit
+2023-04-26 11:03:42,317 - DEBUG -  ---  start emit2023-04-26 11:03:42.316888
+2023-04-26 11:03:42,317 - DEBUG - hashTable program Started
+2023-04-26 11:03:42,317 - DEBUG - --- end emit
+2023-04-26 11:03:45,580 - DEBUG -  ---  start emit2023-04-26 11:03:45.580037
+2023-04-26 11:03:45,580 - DEBUG - the hash table is not initialized, please create table with size
+2023-04-26 11:03:45,580 - DEBUG - --- end emit
+2023-04-26 11:03:54,724 - DEBUG -  ---  start emit2023-04-26 11:03:54.724391
+2023-04-26 11:03:54,724 - DEBUG -  failed to load data (save	) [Errno 2] No such file or directory: 'save\t'
+2023-04-26 11:03:54,724 - DEBUG - --- end emit
+2023-04-26 11:03:58,643 - DEBUG -  ---  start emit2023-04-26 11:03:58.643706
+2023-04-26 11:03:58,643 - DEBUG - command ([a) not recognized
+2023-04-26 11:03:58,644 - DEBUG - --- end emit
+2023-04-26 11:04:09,492 - DEBUG -  ---  start emit2023-04-26 11:04:09.492798
+2023-04-26 11:04:09,493 - DEBUG -  table data (savedTable.json) loaded
+2023-04-26 11:04:09,493 - DEBUG - --- end emit
+2023-04-26 11:05:20,360 - DEBUG -  ---  start emit2023-04-26 11:05:20.360667
+2023-04-26 11:05:20,360 - DEBUG - hashTable program Started
+2023-04-26 11:05:20,360 - DEBUG - --- end emit
+2023-04-26 11:05:45,774 - DEBUG -  ---  start emit2023-04-26 11:05:45.774179
+2023-04-26 11:05:45,774 - DEBUG - the hash table is not initialized, please create table with size
+2023-04-26 11:05:45,775 - DEBUG - --- end emit
+2023-04-26 11:06:19,448 - DEBUG -  ---  start emit2023-04-26 11:06:19.448490
+2023-04-26 11:06:19,448 - DEBUG - hashTable program Started
+2023-04-26 11:06:19,448 - DEBUG - --- end emit
+2023-04-26 11:06:26,978 - DEBUG -  ---  start emit2023-04-26 11:06:26.978170
+2023-04-26 11:06:26,978 - DEBUG -  table data (savedTable.json) loaded
+2023-04-26 11:06:26,978 - DEBUG - --- end emit
+2023-04-26 11:17:33,938 - DEBUG -  ---  start emit2023-04-26 11:17:33.938026
+2023-04-26 11:17:33,938 - DEBUG - hashTable program Started
+2023-04-26 11:17:33,938 - DEBUG - --- end emit
+2023-04-26 11:17:51,065 - DEBUG -  ---  start emit2023-04-26 11:17:51.065631
+2023-04-26 11:17:51,066 - DEBUG - created hashtable with size 20
+2023-04-26 11:17:51,066 - DEBUG - --- end emit
+2023-04-26 11:19:25,145 - DEBUG -  ---  start emit2023-04-26 11:19:25.145169
+2023-04-26 11:19:25,145 - DEBUG -  table data saved in (testJson.json)
+2023-04-26 11:19:25,145 - DEBUG - --- end emit
+2023-04-26 11:30:02,660 - DEBUG -  ---  start emit2023-04-26 11:30:02.660677
+2023-04-26 11:30:02,661 - DEBUG - command () not recognized
+2023-04-26 11:30:02,661 - DEBUG - --- end emit
+2023-04-26 11:30:33,886 - DEBUG -  ---  start emit2023-04-26 11:30:33.886587
+2023-04-26 11:30:33,886 - DEBUG - hashTable program Started
+2023-04-26 11:30:33,886 - DEBUG - --- end emit
+2023-04-26 11:30:51,273 - DEBUG -  ---  start emit2023-04-26 11:30:51.273069
+2023-04-26 11:30:51,273 - DEBUG -  table data (savedTable.json) loaded
+2023-04-26 11:30:51,273 - DEBUG - --- end emit
+2023-04-26 11:48:33,879 - DEBUG -  ---  start emit2023-04-26 11:48:33.879620
+2023-04-26 11:48:33,880 - DEBUG - command () not recognized
+2023-04-26 11:48:33,881 - DEBUG - --- end emit
+2023-04-26 11:48:35,002 - DEBUG -  ---  start emit2023-04-26 11:48:35.002230
+2023-04-26 11:48:35,002 - DEBUG - command () not recognized
+2023-04-26 11:48:35,002 - DEBUG - --- end emit
+2023-04-27 10:27:08,643 - DEBUG -  ---  start emit2023-04-27 10:27:08.642666
+2023-04-27 10:27:08,644 - DEBUG - hashTable program Started
+2023-04-27 10:27:08,644 - DEBUG - --- end emit
+2023-04-27 10:27:58,988 - DEBUG -  ---  start emit2023-04-27 10:27:58.988593
+2023-04-27 10:27:58,988 - DEBUG - created hashtable with size 10
+2023-04-27 10:27:58,988 - DEBUG - --- end emit
+2023-04-27 10:28:23,503 - DEBUG -  ---  start emit2023-04-27 10:28:23.503353
+2023-04-27 10:28:23,503 - DEBUG - command (h\) not recognized
+2023-04-27 10:28:23,503 - DEBUG - --- end emit
+2023-04-27 10:56:46,294 - DEBUG -  ---  start emit2023-04-27 10:56:46.294683
+2023-04-27 10:56:46,295 - DEBUG - hashTable program Started
+2023-04-27 10:56:46,295 - DEBUG - --- end emit
+2023-04-27 10:57:00,974 - DEBUG -  ---  start emit2023-04-27 10:57:00.974398
+2023-04-27 10:57:00,974 - DEBUG - the hash table is not initialized, please create table with size
+2023-04-27 10:57:00,974 - DEBUG - --- end emit
+2023-04-27 10:57:04,361 - DEBUG -  ---  start emit2023-04-27 10:57:04.361862
+2023-04-27 10:57:04,362 - DEBUG - created hashtable with size 10
+2023-04-27 10:57:04,362 - DEBUG - --- end emit
