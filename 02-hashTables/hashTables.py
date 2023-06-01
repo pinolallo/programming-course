@@ -37,7 +37,7 @@ def main():
         # start program
         common.emit("welcome to hashTable, type h for help",constants.PRINT_MESSAGE)
         '''
-             MAIN_COMMAND_DATA=1
+            MAIN_COMMAND_DATA=1
             MAIN_COMMAND_ARGS=2
         '''
         commandsDictionary={
@@ -137,8 +137,8 @@ def main():
             if not hasTable:
                 theTable=HashTable()
             if inputWordsNumber==1:
-                fileName=constants.SAVED_TABLE_FILENAME
-                common.emit(f"loading default {constants.SAVED_TABLE_FILENAME}",constants.LOG_TO_SYSLOG+constants.PRINT_MESSAGE)
+                fileName=constants.SAVED_DATA_FILENAME
+                common.emit(f"loading default {constants.SAVED_DATA_FILENAME}",constants.LOG_TO_SYSLOG+constants.PRINT_MESSAGE)
             else:
                 fileName=argument
             try:
