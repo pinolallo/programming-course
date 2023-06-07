@@ -127,3 +127,27 @@
 2023-04-27 10:57:04,361 - DEBUG -  ---  start emit2023-04-27 10:57:04.361862
 2023-04-27 10:57:04,362 - DEBUG - created hashtable with size 10
 2023-04-27 10:57:04,362 - DEBUG - --- end emit
+2023-06-01 12:02:46,822 - DEBUG -  ---  start emit2023-06-01 12:02:46.822127
+2023-06-01 12:02:46,822 - DEBUG - hashTable program Started
+2023-06-01 12:02:46,822 - DEBUG - --- end emit
+2023-06-01 12:03:35,490 - DEBUG -  ---  start emit2023-06-01 12:03:35.490251
+2023-06-01 12:03:35,490 - DEBUG - hashTable program Started
+2023-06-01 12:03:35,490 - DEBUG - --- end emit
+2023-06-01 12:03:51,540 - DEBUG -  ---  start emit2023-06-01 12:03:51.540486
+2023-06-01 12:03:51,540 - DEBUG - hashTable program Started
+2023-06-01 12:03:51,540 - DEBUG - --- end emit
+2023-06-01 12:03:53,118 - DEBUG -  ---  start emit2023-06-01 12:03:53.118662
+2023-06-01 12:03:53,119 - DEBUG - loading default savedData.json
+2023-06-01 12:03:53,119 - DEBUG - --- end emit
+2023-06-01 12:03:53,119 - DEBUG -  ---  start emit2023-06-01 12:03:53.119383
+2023-06-01 12:03:53,119 - DEBUG -  failed to load data (savedData.json) [Errno 2] No such file or directory: 'savedData.json'
+2023-06-01 12:03:53,119 - DEBUG - --- end emit
+2023-06-01 12:04:34,102 - DEBUG -  ---  start emit2023-06-01 12:04:34.102423
+2023-06-01 12:04:34,103 - DEBUG - hashTable program Started
+2023-06-01 12:04:34,103 - DEBUG - --- end emit
+2023-06-01 12:04:35,474 - DEBUG -  ---  start emit2023-06-01 12:04:35.474183
+2023-06-01 12:04:35,474 - DEBUG - loading default savedTable.json
+2023-06-01 12:04:35,474 - DEBUG - --- end emit
+2023-06-01 12:04:35,476 - DEBUG -  ---  start emit2023-06-01 12:04:35.476337
+2023-06-01 12:04:35,476 - DEBUG -  table data (savedTable.json) loaded
+2023-06-01 12:04:35,476 - DEBUG - --- end emit

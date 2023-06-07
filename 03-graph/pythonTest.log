@@ -523,3 +523,24 @@
 2023-04-27 12:13:18,035 - DEBUG -  ---  start emit2023-04-27 12:13:18.035900
 2023-04-27 12:13:18,036 - DEBUG -  traversing graph (savedData.json) with DSF
 2023-04-27 12:13:18,036 - DEBUG - --- end emit
+2023-05-29 14:50:07,117 - DEBUG -  ---  start emit2023-05-29 14:50:07.116916
+2023-05-29 14:50:07,117 - DEBUG - Graph program Started
+2023-05-29 14:50:07,117 - DEBUG - --- end emit
+2023-05-29 14:51:14,298 - DEBUG -  ---  start emit2023-05-29 14:51:14.298746
+2023-05-29 14:51:14,299 - DEBUG -  table data (savedData.json) loaded
+2023-05-29 14:51:14,299 - DEBUG - --- end emit
+2023-05-29 14:51:35,168 - DEBUG -  ---  start emit2023-05-29 14:51:35.168653
+2023-05-29 14:51:35,168 - DEBUG -  traversing graph (savedData.json) with DSF
+2023-05-29 14:51:35,168 - DEBUG - --- end emit
+2023-06-01 12:02:09,107 - DEBUG -  ---  start emit2023-06-01 12:02:09.107399
+2023-06-01 12:02:09,108 - DEBUG - Graph program Started
+2023-06-01 12:02:09,108 - DEBUG - --- end emit
+2023-06-01 12:02:17,558 - DEBUG -  ---  start emit2023-06-01 12:02:17.558458
+2023-06-01 12:02:17,558 - DEBUG -  failed to load data (['']) expected str, bytes or os.PathLike object, not list
+2023-06-01 12:02:17,558 - DEBUG - --- end emit
+2023-06-01 12:02:21,239 - DEBUG -  ---  start emit2023-06-01 12:02:21.239836
+2023-06-01 12:02:21,240 - DEBUG -  table data (savedData.json) loaded
+2023-06-01 12:02:21,240 - DEBUG - --- end emit
+2023-06-01 12:02:24,695 - DEBUG -  ---  start emit2023-06-01 12:02:24.695222
+2023-06-01 12:02:24,695 - DEBUG -  traversing graph (savedData.json) with DSF
+2023-06-01 12:02:24,695 - DEBUG - --- end emit

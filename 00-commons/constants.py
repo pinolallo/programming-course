@@ -33,5 +33,16 @@ SYSLOG_LEVEL="DEBUG"
 #configs for hash table
 MIN_TABLE_SIZE=10
 MAX_TABLE_SIZE=100
-SAVED_DATA_FILENAME='savedData.json'
+SAVED_DATA_FILENAME='savedTable.json'
 
+
+#mysql connection config
+MAIN_DB_TABLE='movies'
+
+mysqlConfig={
+    'user'  : 'pinolallo',
+    'password':'cippalippa',
+    'host':'localhost',
+    'database':'movieDb',
+    'port':3306
+}
