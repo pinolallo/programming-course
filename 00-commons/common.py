@@ -127,7 +127,7 @@ def outputMail(message):
 def makeAsciiTable(input):
     '''will return a formatted ascii table from a list with dictionary structure
         arguments:
-            input as list [{'key':'val'},{'key':'val1'},{'key':'valN'}]
+            input as list [{'key1':'val1'},{'key2':'val2'},{'keyN':'valN'}]
         return:
             +------+
             | key  |
