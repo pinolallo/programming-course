@@ -16,20 +16,24 @@ def getDataset():
                if i==0:
                     header=row
                else:
-                    #common.emit(f'\t{row[0]} works in the {row[1]} department, and was born in {row[2]}.')
                     rawDb.append(row)
                i += 1
           result['header']=header 
           result['db']=rawDb     
           return result
      
-def importSqlGeneator(header,row,databaseDef):
+def importSqlGeneator(header,row,databaseDef,mainRecordId):
      sqlelements=[];
      i=0
+     #common.emit(databaseDef)
      for field in row:
           #common.emit(f"field {field}")
           sqlelement={}
-          sqlelement[header[i]]=fieldValuate(header[i],field,databaseDef)
+          try:
+               sqlelement[header[i]]=fieldValuate(header[i],field,databaseDef,mainRecordId)
+          except:
+               vvival=''
+               #common.emit(f"fail field evalutate {header[i]} fieldvalue:{field} main recordid:{mainRecordId}")
           '''try:
                sqlelement[header[i]]=fieldValuate(header[i],field,databaseDef)
           except:
@@ -37,8 +41,13 @@ def importSqlGeneator(header,row,databaseDef):
           sqlelements.append(sqlelement)
           i=i+1
 
-def fieldValuate(field, value, databaseDef):
+def fieldValuate(field, value, databaseDef,mainRecordId):
      hasQuote=True
+     sql=[]
+     result={}
+     result[constants.MAIN_DB_TABLE]={}
+     result[constants.MAIN_DB_TABLE]['field']=[]
+     result[constants.MAIN_DB_TABLE]['value']=[]
      conversionDictionary={
           'index':{'action':'null'},
           'budget':{'action':',fill(movie_budget)'},
@@ -46,7 +55,7 @@ def fieldValuate(field, value, databaseDef):
           'homepage':{'action':',fill(movie_HomePage)'},
           'id':{'action':',fill(movie_id)'},
           'keywords':{'action':',fill(movie_keywords)'},
-          'original_language':{'action':',getId(languages,movie_original_lang)'},
+          'original_language':{'action':',fill(movie_original_lang)'},
           'original_title':{'action':',fill(movie_original_title)'},
           'overview':{'action':',fill(movie_overview)',},
           'popularity':{'action':',fill(movie_popularity)'},
@@ -62,46 +71,72 @@ def fieldValuate(field, value, databaseDef):
           'vote_average':{'action':',fill(movie_vote_average)'},
           'vote_count':{'action':',fill(movie_vote_num)'},
           'cast':{'action':',fill(movie_cast)'},
-          'crew':{'action':',putDb(jobs,job:job_name,department:job_department),putDb(people,name:people_name,gender:people_gender),putRelation(people_id,job_id,people_jobs),putRelation(movie_id,job_id,movie_jobs)'},
+          'crew':{'action':',putDb(credits,job:job_name,department:job_department,name:people_name,gender:people_gender)'},
           'director':{'action':'null'}
      }
      command=conversionDictionary[field]
+   
      if  command['action'] == 'null':
-          common.emit(f'field {field} has a null action')
-          return
+          return result
+     #fieldType=databaseDef[constants.MAIN_DB_TABLE][field]['fieldType']
+     '''if fieldType=='int' or fieldType=='float':
+          hasQuote=0
      else:
-          fieldAction=command['action']
-          '''fieldType=databaseDef[constants.MAIN_DB_TABLE][field]
-          if fieldType=='int' or fieldType=='float':
-               hasQuote=False'''
-          parsedFunctions=re.findall(",(.*?)\((.*?)\)",fieldAction)
-          for parsedFunction in parsedFunctions:
-               i=0
-               for functionElement in parsedFunction:
-                    if i==0:
-                         functionName=functionElement
-                    else:
-                         functionArgument=functionElement
-                    i=i+1
-               if functionName=='fill':
-                    common.emit(f'datasetField:{field} fill dbfield ({functionArgument})')
-               elif functionName=='getId':
-                    splittedArgs=functionArgument.split(",")
-                    common.emit(f'datasetField:{field} wil gedId from table {splittedArgs[0]} and fill dbfield({splittedArgs[1]}) ')
-               elif functionName=='putRelation':
-                    splittedArgs=functionArgument.split(",")
-                    common.emit(f'datasetField:{field} will make a relation in table {splittedArgs[2]} using id ({splittedArgs[0]}) left joined ({splittedArgs[1]})) ')
-               elif functionName=='putDb':
-                    splittedArgs=functionArgument.split(",")
-                    #popping out the first argument (the table)
-                    fillingTable=splittedArgs.pop(0)
-                    inputFields=[]
-                    outputFields=[]
-                    #we can have an undetermined list of fields from json to db
-                    for fieldArg in splittedArgs:
-                         #field has colon as sepator
-                         tmp=fieldArg.split(":")
-                         inputFields.append(tmp[0])
-                         outputFields.append(tmp[1])
-                         common.emit(f'datasetField:{field} will put into db {fillingTable} fieldJason ({tmp[0]}) int dbField ({tmp[1]})) ')
-          return ['cose']   
+          hasQuote=1'''
+     
+     common.emit(f"adadadadadad {command['fieldType']}")
+     parsedFunctions=re.findall(",(.*?)\((.*?)\)",command['action'])
+     
+     common.emit(parsedFunctions)
+
+     for parsedFunction in parsedFunctions:
+          i=0
+          for functionElement in parsedFunction:
+               if i==0:
+                    functionName=functionElement
+               else:
+                    functionArgument=functionElement
+               i=i+1
+          if functionName=='fill':
+               common.emit(f'datasetField:{field} fill dbfield ({functionArgument})')
+               result['field'].append(field)
+               if hasQuote==1:
+                    result[constants.MAIN_DB_TABLE]['value'].append(f"'{value}'")
+               else:
+                    result[constants.MAIN_DB_TABLE]['value'].append(value)
+          elif functionName=='putRelation':
+               result[splittedArgs[2]]={}
+               splittedArgs=functionArgument.split(",")
+               common.emit(f'datasetField:{field} will make a relation in table {splittedArgs[2]} using id ({splittedArgs[0]}) left joined ({splittedArgs[1]})) ')
+          elif functionName=='putDb':
+               common.emit('putDB')
+               splittedArgs=functionArgument.split(",")
+               #popping out the first argument (the table)
+               fillingTable=splittedArgs.pop(0)
+               queryElement={}
+               queryElement['field']=[]
+               queryElement['value']=[]
+               #adding movie id
+               queryElement['field'].append('credit_id')
+               queryElement['value'].append(mainRecordId)
+               for fieldArg in splittedArgs:
+                    #field has colon as sepator
+                    tmp=fieldArg.split(":")
+                    queryElement=putDb(value,tmp[0],tmp[1],queryElement)
+                    common.emit(f'datasetField:{field} will add into db {fillingTable} fieldJason ({tmp[0]}) int dbField ({tmp[1]})) ')
+               for fieldInsert in queryElement:
+                    fields=",".join(fieldInsert['field'])
+                    values=",".join(fieldInsert['value'])
+                    sql.append(f'insert IGNORE into {fillingTable} ({fields}) values ({values})') 
+               common.emit(sql)
+     return result
+
+
+def putDb(crewSet,fieldJason,dbField,queryElement):
+     queryElement={}
+     queryElement['field']=[]
+     queryElement['value']=[]
+     for crew in crewSet:
+          queryElement['field'].append(dbField)
+          queryElement['value'].append(f"'{crew[fieldJason]}'")
+     return queryElement

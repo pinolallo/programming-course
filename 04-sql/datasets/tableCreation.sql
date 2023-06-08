@@ -37,38 +37,18 @@ drop table if exists movies;
        PRIMARY KEY (`movie_id`) 
      ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='movie_dataset';
      
-  drop table if exists people;
-  CREATE TABLE `people` ( 
-       `people_id` int(11), 
-       `people_name` varchar(256) NOT NULL, 
-       `people_gender` enum('M','F') NOT NULL, 
-       PRIMARY KEY (`people_id`) 
-     ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='crew of movie_dataset';
-    
-    drop table if exists people_jobs;
-    CREATE TABLE `people_jobs` ( 
-       `people_id` int(11), 
-       `job_id` int(11) NOT NULL, 
-        KEY `people_id` (`people_id`),
-        KEY `job_id` (`job_id`)
-     ) ENGINE=InnoDB COMMENT='people jobs relation table';
-     
-    drop table if exists jobs;
-    CREATE TABLE `jobs` ( 
-       `job_id` int(11), 
-       `job_name` varchar(128) NOT NULL, 
-       `job_department` varchar(128) NOT NULL, 
-        PRIMARY KEY (`job_id`) 
+    drop table if exists credits;
+    CREATE TABLE `credits` ( 
+      `credit_id` int(11),
+      `people_name` varchar(256) NOT NULL, 
+      `people_gender` enum('M','F') NOT NULL, 
+      `job_name` varchar(128) NOT NULL, 
+      `job_department` varchar(128) NOT NULL, 
+      `movie_id` int(11),
+      PRIMARY KEY (`credit_id`),
+      KEY `movie_id` (`movie_id`) 
      ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='jobs of movie_dataset';
          
-	 drop table if exists movie_jobs;
-     CREATE TABLE `movie_jobs` ( 
-       `job_id` int(11), 
-       `movie_id` int(11) NOT NULL, 
-        KEY `job_id` (`job_id`), 
-        KEY `movie_id` (`movie_id`) 
-     ) ENGINE=InnoDB COMMENT='movie jobs relation table';
-    
     drop table if exists productions;
     CREATE TABLE `productions` ( 
        `prod_id` int(11), 

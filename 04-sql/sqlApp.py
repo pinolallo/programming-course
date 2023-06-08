@@ -97,17 +97,16 @@ def main():
         elif command == "c" or  command == "check":
             # set the MAIN_DIE bit of programControlMask
             common.emit(f"databaseDef {tableDef}", constants.PRINT_MESSAGE)
-            
         elif command == "l" or  command == "load":
-            
             common.emit("loading main datasetq", constants.PRINT_MESSAGE)
             mainDb=csvLoader.getDataset()
             databaseDef=mysqlDriver.loadDatabaseDef()
             sqlList=[]
             i=0
             for row in mainDb['db']:
+                mainRecordId=row[constants.MAIN_DB_RECORD_ID_INDEX]
                 try:
-                    sqlList.append(csvLoader.importSqlGeneator(mainDb['header'],row,databaseDef))
+                    sqlList.append(csvLoader.importSqlGeneator(mainDb['header'],row,databaseDef,mainRecordId))
                 except:
                     common.emit(f"fail getting sql command for line {i}")        
                 i=i+i

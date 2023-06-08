@@ -39,13 +39,16 @@ def loadDatabaseDef():
         sql="desc "+table
         cursor.execute(sql)
         result = cursor.fetchall()
+        #TableDef[table]={}
         TableDef[table]={}
+        #TableDef[table].append({})
         for fields in result:
-            TableDef[table]['fieldName']=fields[0]
+            TableDef[table][fields[0]]={}
+            TableDef[table][fields[0]]['fieldName']=fields[0]
             cippa=re.findall("(.*?)\(",fields[1].decode())
             if cippa:
-                TableDef[table]['fieldType']=cippa[0]
+                TableDef[table][fields[0]]['fieldType']=cippa[0]
             else:
-                TableDef[table]['fieldType']=fields[1].decode()
-            TableDef[table]['fieldKey']=fields[3];                                       
+                TableDef[table][fields[0]]['fieldType']=fields[1].decode()
+            TableDef[table][fields[0]]['fieldKey']=fields[3]
     return TableDef
