@@ -39,6 +39,7 @@ SAVED_DATA_FILENAME='savedTable.json'
 #mysql connection config
 MAIN_DB_TABLE='movies'
 MAIN_DB_RECORD_ID_INDEX=4
+MAIN_DB_RECORD_FIELD='movie_id'
 mysqlConfig={
     'user'  : 'pinolallo',
     'password':'cippalippa',

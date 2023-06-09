@@ -10,7 +10,7 @@ def initDb():
     try:
         connector  = mysql.connector.connect(**constants.mysqlConfig)
     except mysql.connector as errMsg:
-        commons.emit(errMsg,constants.LOG_TO_SYSLOG+constants.PRINT_MESSAGE)
+        common.emit(errMsg,constants.LOG_TO_SYSLOG+constants.PRINT_MESSAGE)
     return connector.cursor()
 
 
@@ -51,4 +51,6 @@ def loadDatabaseDef():
             else:
                 TableDef[table][fields[0]]['fieldType']=fields[1].decode()
             TableDef[table][fields[0]]['fieldKey']=fields[3]
+            #TableDef[table].append({})
+                                           
     return TableDef

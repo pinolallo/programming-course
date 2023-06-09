@@ -100,16 +100,25 @@ def main():
         elif command == "l" or  command == "load":
             common.emit("loading main datasetq", constants.PRINT_MESSAGE)
             mainDb=csvLoader.getDataset()
-            databaseDef=mysqlDriver.loadDatabaseDef()
             sqlList=[]
             i=0
+            #print(databaseDef)
+            
             for row in mainDb['db']:
                 mainRecordId=row[constants.MAIN_DB_RECORD_ID_INDEX]
+                sqlelements={}
+                sqlelements['queryElement']={}
+                sqlelements['queryElement']['fields']=[]
+                sqlelements['queryElement']['values']=[]
+                sqlelements['extraQuery']=[]
                 try:
-                    sqlList.append(csvLoader.importSqlGeneator(mainDb['header'],row,databaseDef,mainRecordId))
+                   sqlelements=csvLoader.importSqlGeneator(mainDb['header'],row,mainRecordId,sqlelements)
                 except:
-                    common.emit(f"fail getting sql command for line {i}")        
-                i=i+i
+                    common.emit(f"fail getting sql command for line {i}") 
+                if i==0:
+                    val=''
+                    #print(sqlelements['extraQuery'])      
+                i=i+1
           
     main()
 
