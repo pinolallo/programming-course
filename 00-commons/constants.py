@@ -34,6 +34,7 @@ SYSLOG_LEVEL="DEBUG"
 MIN_TABLE_SIZE=10
 MAX_TABLE_SIZE=100
 SAVED_DATA_FILENAME='savedTable.json'
+SAVED_SQL_FILENAME='sqlImport.sql'
 
 
 #mysql connection config

@@ -190,3 +190,4 @@ def makeAsciiTable(input):
     #textify the created list   
     output = "\n".join(tablePrint)
     return output
+
