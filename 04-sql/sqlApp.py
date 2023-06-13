@@ -13,7 +13,8 @@ def main():
     global programControlMask
     global commandsDictionary
     global tableDef
-
+    global mainDb
+    global sqlResult
     commandsDictionary={
             "h":0,
             "help":0,
@@ -23,9 +24,12 @@ def main():
             "verbose":0,
             "c":0,
             "check":0,
-            "load":0,
+            "p":0,
+            "parse":0,
             "l":0,
-            "create":constants.MAIN_COMMAND_ARGS
+            "load":0,
+            "s":constants.MAIN_COMMAND_ARGS,
+            "save":constants.MAIN_COMMAND_ARGS
         }
     try:
         programControlMask
@@ -45,6 +49,11 @@ def main():
     # get the input    
     dataInput = input("sqlApp> ")
     canExec=True
+    hasTable=True
+    try:
+        mainDb
+    except:
+        hasTable=False
     # assert the input 
     # generate command and command arguments
     theInput=dataInput.split(" ")
@@ -73,7 +82,7 @@ def main():
                 common.emit(f"command ({command}) need arguments")
                 canExec=False
     #run the command
-    isVerbose=programControlMask & constants.MAIN_VERBOSE
+    verbose=programControlMask & constants.MAIN_VERBOSE
     if canExec:
         #print help
         if command == "h" or  command == "help":
@@ -100,28 +109,60 @@ def main():
         elif command == "l" or  command == "load":
             common.emit("loading main datasetq", constants.PRINT_MESSAGE)
             mainDb=csvLoader.getDataset()
-            sqlList=[]
-            i=0
-            #print(databaseDef)
-            
-            for row in mainDb['db']:
-                mainRecordId=row[constants.MAIN_DB_RECORD_ID_INDEX]
-                sqlelements={}
-                sqlelements['queryElement']={}
-                sqlelements['queryElement']['fields']=[]
-                sqlelements['queryElement']['values']=[]
-                sqlelements['extraQuery']=[]
-                try:
-                   sqlelements=csvLoader.importSqlGeneator(mainDb['header'],row,mainRecordId,sqlelements)
-                except:
-                    common.emit(f"fail getting sql command for line {i}") 
-                if i==0:
-                    val=''
-                    #print(sqlelements['extraQuery'])      
-                i=i+1
-          
-    main()
+            if verbose:
+                display=[]
+                display.append({'parsed fields':len(mainDb['header']),'tot entries':len(mainDb['db'])})
+                common.emit(common.makeAsciiTable(display))
+                display=[]
+                for field, action in mainDb['conversionDictionary'].items():
+                    if action=='null':
+                        action='no action'
+                    res=re.search("(.*?)\((.*?)\)",action)
+                    if  res == None:
+                        continue
+                    functionName=res.group(1)
+                    functionArgument=res.group(2)
+                    display.append({'field':field,'pseudoFuntion':functionName,'argument':functionArgument})
+                common.emit(common.makeAsciiTable(display))
+        #save file
+        elif command == 's' or command == "save":
+            sqlResult=[]
+            if inputWordsNumber==1:
+                fileName=constants.SAVED_SQL_FILENAME
+                common.emit(f"saving as default {constants.SAVED_SQL_FILENAME}",constants.LOG_TO_SYSLOG+constants.PRINT_MESSAGE)
+            else:
+                fileName=argument
 
+            if not hasTable:
+                common.emit(f" cannot Save ({fileName}) because no loaded data",constants.LOG_TO_SYSLOG+constants.PRINT_MESSAGE)
+            else:
+                i=0
+                sqlelements=[]
+                for row in mainDb['db']:
+                    sql=[]
+                    mainRecordId=row[constants.MAIN_DB_RECORD_ID_INDEX]
+                    try:
+                        sql=csvLoader.importSqlGeneator(mainDb['header'],row,mainRecordId,sqlelements)
+                    except Exception as theError:
+                        common.emit(f"fail getting sql command for line {i} because {theError}")
+                    # common.emit(f"{sql}")
+                    sqlResult=mergeList(sqlResult,sql)
+                    '''
+                        if i==0:
+                       # common.emit(sqlResult)
+                        try:
+                            saveSql("\n".join(sqlResult),fileName)
+                        except Exception as theError:
+                            common.emit(f"fail saving {fileName} because {theError}")    
+                    else:
+                        main() 
+                    '''  
+                    i=i+1
+            try:
+                saveSql("\n".join(sqlResult),fileName)
+            except Exception as theError:
+                common.emit(f"fail saving {fileName} because {theError}")   
+    main()
 
 
 
@@ -155,3 +196,16 @@ commands:
    q quit               will end the program
 """
     common.emit(helpText, constants.PRINT_MESSAGE)
+
+
+def saveSql(sql,fileName=None):
+    if not fileName:
+        fileName=constants.SAVED_SQL_FILENAME
+    with open(fileName, 'w') as file:
+        file.write(sql)
+
+
+def mergeList(lst1, lst2):
+    for i in lst2:
+        lst1.append(i)
+    return lst1

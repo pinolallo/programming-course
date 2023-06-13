@@ -10,11 +10,11 @@
   movie_dataset.csv
 ********************************************************
 */
-
-create database movieDb IF NOT EXISTS DEFAULT CHARACTER SET 'utf8';
+drop database movieDb;
+create database movieDb  DEFAULT CHARACTER SET 'utf8';
+CREATE USER IF NOT EXISTS 'dbUser'@'%' IDENTIFIED  BY 'cippalippa';
+GRANT ALL ON movieDb.* to 'dbUser'@'%';
 use movieDb;
-
-drop table if exists movies;
      CREATE TABLE `movies` ( 
        `movie_id` int(11), 
        `movie_name` varchar(256) NOT NULL , 
@@ -37,7 +37,6 @@ drop table if exists movies;
        PRIMARY KEY (`movie_id`) 
      ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='movie_dataset';
      
-    drop table if exists credits;
     CREATE TABLE `credits` ( 
       `credit_id` int(11),
       `people_name` varchar(256) NOT NULL, 
@@ -48,52 +47,33 @@ drop table if exists movies;
       PRIMARY KEY (`credit_id`),
       KEY `movie_id` (`movie_id`) 
      ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='jobs of movie_dataset';
-         
-    drop table if exists productions;
-    CREATE TABLE `productions` ( 
-       `prod_id` int(11), 
-       `prod_name` varchar(128) NOT NULL, 
-       PRIMARY KEY (`prod_id`) 
-     ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci COMMENT='productions company';
-     
-     drop table if exists movie_productions;
-     CREATE TABLE `movie_productions` ( 
-       `prod_id` int(11), 
-       `movie_id` int(11) NOT NULL, 
-        KEY `prod_id` (`prod_id`),
-        KEY `movie_id` (`movie_id`)
-     ) ENGINE=InnoDB COMMENT='movie production relation table';
-    
-    drop table if exists countries;
-    CREATE TABLE `countries` ( 
-       `country_id` varchar(2) not null, 
-       `country_name` varchar(256) not null, 
-        PRIMARY KEY (`country_id`) 
-     ) ENGINE=InnoDB COMMENT='iso_3166_1 countries code';
-     
-      drop table if exists movie_countries;
-      CREATE TABLE `movie_countries` ( 
-       `movie_id` varchar(2) not null, 
-       `country_id` varchar(256) not null, 
+       
+      CREATE TABLE `productions` (
+       `id` int(11) NOT NULL auto_increment,
+       `prod_id` int(11),
+       `prod_name`  varchar(128) not null,
+       `movie_id` int(11),
+        PRIMARY KEY (`id`), 
+        KEY (`prod_id`),
+        KEY (`prod_name`),
+        KEY (`movie_id`) 
+     ) ENGINE=InnoDB COMMENT='movie productions';
+
+      CREATE TABLE `countries` ( 
+       `id` int(11) NOT NULL auto_increment,
+       `country_name`  varchar(128) not null,
+       `movie_id` int(11),
+       `country_id` varchar(2) not null,
+        PRIMARY KEY (`id`), 
         KEY (`movie_id`),
         KEY (`country_id`) 
      ) ENGINE=InnoDB COMMENT='movie languages relation table';
 
-    drop table if exists languages;
-    CREATE TABLE `languages` ( 
+    CREATE TABLE `languages` (
+       `id` int(11) NOT NULL auto_increment, 
+       `movie_id` int(11),
        `lang_id` varchar(2) not null, 
-       `lang_name` varchar(256) not null, 
-        PRIMARY KEY (`lang_id`)
-     ) ENGINE=InnoDB COMMENT='iso_3166_1 countries code';
-     
-    drop table if exists movie_lang;
-    CREATE TABLE `movie_lang` ( 
-       `movie_id` varchar(2) not null, 
-       `lang_id` varchar(256) not null, 
+        PRIMARY KEY (`id`),
         KEY (`movie_id`),
         KEY (`lang_id`) 
      ) ENGINE=InnoDB COMMENT='movie languages relation table';
-
-     CREATE USER IF NOT EXISTS 'dbUser'@'%' IDENTIFIED BY 'cippalippa';
-
-     GRANT ALL ON movieDb.* to 'dbUser'@'%';
