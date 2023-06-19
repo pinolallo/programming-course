@@ -22,14 +22,14 @@ def main():
             "quit":0,
             "v":0,
             "verbose":0,
-            "c":0,
-            "check":0,
             "p":0,
             "parse":0,
             "l":0,
             "load":0,
-            "s":constants.MAIN_COMMAND_ARGS,
-            "save":constants.MAIN_COMMAND_ARGS
+            "s":0,q
+            "save":0,
+            "d":0,
+            "describe":0
         }
     try:
         programControlMask
@@ -55,7 +55,7 @@ def main():
     except:
         hasTable=False
     # assert the input 
-    # generate command and command arguments
+    # generate command and command arguments (splitting in words)
     theInput=dataInput.split(" ")
     inputWordsNumber=len(theInput)
     argumentslist=[]
@@ -103,9 +103,6 @@ def main():
             else:
                 programControlMask +=constants.MAIN_VERBOSE
                 common.emit(f"verbose mode turned on")
-        elif command == "c" or  command == "check":
-            # set the MAIN_DIE bit of programControlMask
-            common.emit(f"databaseDef {tableDef}", constants.PRINT_MESSAGE)
         elif command == "l" or  command == "load":
             common.emit("loading main datasetq", constants.PRINT_MESSAGE)
             mainDb=csvLoader.getDataset()
@@ -113,17 +110,25 @@ def main():
                 display=[]
                 display.append({'parsed fields':len(mainDb['header']),'tot entries':len(mainDb['db'])})
                 common.emit(common.makeAsciiTable(display))
+                conversionTable=makeConversionTable(mainDb['conversionDictionary'])
+                common.emit(common.makeAsciiTable(conversionTable))
+        #describe
+        elif command == 'd' or command == "describe":
+            if hasTable:
                 display=[]
-                for field, action in mainDb['conversionDictionary'].items():
-                    if action=='null':
-                        action='no action'
-                    res=re.search("(.*?)\((.*?)\)",action)
-                    if  res == None:
-                        continue
-                    functionName=res.group(1)
-                    functionArgument=res.group(2)
-                    display.append({'field':field,'pseudoFuntion':functionName,'argument':functionArgument})
+                display.append({'parsed fields':len(mainDb['header']),'tot entries':len(mainDb['db'])})
                 common.emit(common.makeAsciiTable(display))
+                display=makeConversionTable(mainDb['conversionDictionary'])
+                common.emit(common.makeAsciiTable(display))
+                for tableName,fieldDef in tableDef.items():
+                    common.emit(f"\t{tableName}:")
+                    display=[]
+                    for fieldName, fieldDefinition in fieldDef.items():
+                           display.append(fieldDefinition)
+                    common.emit(common.makeAsciiTable(display))
+            else:
+                common.emit(f"Cannot describe: no loaded dataset (use l(load) to fix)")
+
         #save file
         elif command == 's' or command == "save":
             sqlResult=[]
@@ -145,18 +150,7 @@ def main():
                         sql=csvLoader.importSqlGeneator(mainDb['header'],row,mainRecordId,sqlelements)
                     except Exception as theError:
                         common.emit(f"fail getting sql command for line {i} because {theError}")
-                    # common.emit(f"{sql}")
                     sqlResult=mergeList(sqlResult,sql)
-                    '''
-                        if i==0:
-                       # common.emit(sqlResult)
-                        try:
-                            saveSql("\n".join(sqlResult),fileName)
-                        except Exception as theError:
-                            common.emit(f"fail saving {fileName} because {theError}")    
-                    else:
-                        main() 
-                    '''  
                     i=i+1
             try:
                 saveSql("\n".join(sqlResult),fileName)
@@ -194,6 +188,9 @@ commands:
    create               will init/create a new database set
    v verbose            will set the verbosity
    q quit               will end the program
+   l load               will load the default dataset(movie_dataset.csv)
+   s save   filename    will save the sql commands list from parsed dataset
+   d describe           will output the sql table and the conversion action
 """
     common.emit(helpText, constants.PRINT_MESSAGE)
 
@@ -209,3 +206,16 @@ def mergeList(lst1, lst2):
     for i in lst2:
         lst1.append(i)
     return lst1
+
+def makeConversionTable(conversionDictionary):
+    display=[]
+    for field, action in conversionDictionary.items():
+        if action=='null':
+            action='no action'
+        res=re.search("(.*?)\((.*?)\)",action)
+        if  res == None:
+            continue
+        functionName=res.group(1)
+        functionArgument=res.group(2)
+        display.append({'field':field,'pseudoFuntion':functionName,'argument':functionArgument})
+    return display
