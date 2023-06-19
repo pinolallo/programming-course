@@ -62,11 +62,13 @@ def getDataset():
                i += 1
           result['header']=header 
           result['db']=rawDb
+          #transport also the conversion Dictionary
           result['conversionDictionary']=conversionDictionary     
           return result
      
 
 def importSqlGeneator(header,row,mainRecordId,sqlelements):
+     #create sqlElement structure
      sqlelements={}
      sqlelements['queryElement']={}
      sqlelements['queryElement']['fields']=[]
@@ -75,6 +77,7 @@ def importSqlGeneator(header,row,mainRecordId,sqlelements):
      i=0
      #iterate for each single record in row
      for fieldValue in row:
+          #create sql elements (and sqlQueris for related fields)
           sqlelements=fieldValuate(header[i],fieldValue,mainRecordId,sqlelements)
           #get MAIN_DB_TABLE record sql elements and create a comma separated list    
           sqlFields=",".join(sqlelements['queryElement']['fields'])
@@ -93,15 +96,19 @@ def fieldValuate(fieldName, fieldValue,mainRecordId,result):
      splittedArgs=[]
      command=conversionDictionary[fieldName]
      if  command == 'null':
+          #do not consider field
           return result
      #we need to divide using a regular expression the function and argument related to the field to be evaluated
      match=re.search("(.*?)\((.*?)\)",command)
      functionName=match.group(1)
      functionArgument=match.group(2)
      if functionName=='fill':
+          #since we do create a sql string and not sendig a sql command we nee to delete internal quoting 
           fieldValue=fieldValue.replace("'",' ')
           fieldValue=fieldValue.replace("\"",' ')
+          #is a number or a string?
           if not re.match("^[0-9.]+$",fieldValue):
+               #is not a number need to be quoted
                db_value=(f'"{fieldValue}"')
           result['queryElement']['values'].append(f'"{fieldValue}"')
           result['queryElement']['fields'].append(functionArgument)

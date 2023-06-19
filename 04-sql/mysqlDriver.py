@@ -30,7 +30,7 @@ def loadDatabaseDef():
     with open('datasets/tableCreation.sql','r') as tableDef:
         tableDefToParse=tableDef.read()
     #use regular expression to get the table name
-    parsed=re.findall('drop table if exists (.*?);',tableDefToParse)
+    parsed=re.findall('CREATE TABLE `(.*?)`',tableDefToParse)
     #create list from results
     tables = [line.rstrip('\n') for line in parsed]
     
