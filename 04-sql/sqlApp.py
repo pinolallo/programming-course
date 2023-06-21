@@ -26,7 +26,7 @@ def main():
             "parse":0,
             "l":0,
             "load":0,
-            "s":0,q
+            "s":0,
             "save":0,
             "d":0,
             "describe":0
